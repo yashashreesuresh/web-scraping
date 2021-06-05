@@ -14,7 +14,7 @@ NEWSPIDER_MODULE = 'myntra.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'myntra (+http://www.yourdomain.com)'
+USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -90,8 +90,6 @@ DOWNLOADER_MIDDLEWARES = {
 FEED_EXPORT_ENCODING = "utf-8"
 
 #SELENIUM
-from shutil import which
-
 SELENIUM_DRIVER_NAME = 'chrome'
 SELENIUM_DRIVER_EXECUTABLE_PATH = './chromedriver'
-SELENIUM_DRIVER_ARGUMENTS=['--headless']
+SELENIUM_DRIVER_ARGUMENTS=[]
