@@ -3,3 +3,6 @@ __pycache__/
 dbs/
 eggs/
 project_egg_info/
+build/
+project.egg-info/
+logs/

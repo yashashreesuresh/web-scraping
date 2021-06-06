@@ -1,11 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from shutil import which
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
 
-driver = webdriver.Chrome(executable_path="./chromedriver", options=chrome_options)
+path = which("./chromedriver")
+print(path)
+
+driver = webdriver.Chrome(executable_path=path, options=chrome_options)
 driver.get("https://duckduckgo.com/")
 
 search_input = driver.find_element_by_id("search_form_input_homepage")
